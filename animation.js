@@ -1,57 +1,32 @@
-function Menu_Box () {
-    const content_buttom = document.querySelector(".conteudo")
-
-    content_buttom.addEventListener("mouseover", () => {
-        let menu_box = document.querySelector(".menu_box")
-        menu_box.classList.add("active")
-        content_buttom.classList.add("select_opition")
-        
-    })
-
+function Access_Content () {
+    let access_buttom = document.querySelector('.nav_content')
     
+    access_buttom.addEventListener("click", () => {
+        let transition_page = document.querySelector('.initial_page')
+        let scroll_header = document.querySelector('.main_opitions')
+        let sections = document.querySelector('.sections')
+
+        transition_page.classList.add('add_transition')
+        scroll_header.classList.add('transition_opitions')
+        sections.classList.add('transition_main')
+    }
+    )
 }
-Menu_Box()
+Access_Content()
 
+function Return_InitialPage () {
+    let initial_page = document.querySelector('.opition_home')
 
-function Remove_Box() {
-    const body = document.querySelector("body")
+    initial_page.addEventListener("click", () => {
+        let page_one = document.querySelector('.initial_page')
+        let remove_header = document.querySelector('.main_opitions')
+        let remove_sections = document.querySelector('.sections')
 
-    body.addEventListener("click", () => {
-    let remove_box = document.querySelector(".menu_box")
-    let remove_border = document.querySelector(".conteudo")
-    remove_box.classList.remove("active")
-    remove_border.classList.remove("select_opition")
+        page_one.classList.add('transition_opitions')
+        page_one.classList.remove('add_transition')
+        remove_header.classList.remove('transition_opitions')
+        remove_sections.classList.remove('transition_main')
     })
+
 }
-Remove_Box()
-
-
-
-function Main_Opitions () {
-    const main_themes = document.querySelectorAll(".themes")
-
-    main_themes.forEach((a) => {
-        a.addEventListener("click", () => {
-            let home_screen = document.querySelector(".home_screen")
-            home_screen.classList.add("transparent")
-            let main_menu = document.querySelector(".main_opitions")
-            main_menu.classList.add("transition_opitions")
-        })
-    })
-}
-Main_Opitions()
-
-
-
-function Return_Home () {
-    const opition_home = document.querySelector(".opition_home")
-
-    opition_home.addEventListener("click", () => {
-        let remove_opitions = document.querySelector(".main_opitions")
-        remove_opitions.classList.remove("transition_opitions")
-
-        let add_home_screen = document.querySelector(".home_screen")
-        add_home_screen.classList.remove("transparent")
-    })
-}
-Return_Home()
+Return_InitialPage()
