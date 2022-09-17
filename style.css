@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #1fc4f7;
+    background-color: #094051;
 }
 
 
@@ -34,8 +34,8 @@ li{
 
 .access_content{
     padding: 30px 40px 30px 40px;
-    background-color: #30696c;
-    border-radius: 30px;
+    background-color: #143f41;
+    border-radius: 20px;
     font-size: 25px;
     color: rgb(172, 239, 235);
 }
@@ -43,7 +43,7 @@ li{
 
 
 .transition_buttom :hover{
-    background-color: #143f41;
+    background-color: #30696c;
 }
 
 
@@ -174,12 +174,12 @@ li{
 
 .transition_main{
     transform: translateY(3%);
-    transition: 0.5s;
+    transition: 0.75s;
 }
 
 .transition_opitions{
     transform: translateY(0%);
-    transition: 0.5s;
+    transition: 0.75s;
 }
 
 .add_transition{
