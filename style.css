@@ -85,14 +85,15 @@ li{
     margin-right: 150px;
     background-color: rgba(0, 5, 26, 0.7);
     border-radius: 20px;
-    box-shadow: 10px 5px 5px rgb(16, 27, 32);
+    box-shadow: 10px 5px 5px rgb(6, 10, 12);
     padding: 0px 20px 60px 20px;
 }
 
 .about_content:hover{
     box-shadow: 15px 15px 15px rgb(11, 189, 225);
-    transition: 0.75s;
+    transition: 1s;
 }
+
 
 .preview_content{
     text-align: center;

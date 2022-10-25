@@ -10,6 +10,9 @@ function Access_Content () {
             scroll_header.classList.add('transition_opitions')
             sections.classList.add('transition_main')
         })
+        a.addEventListener("mouseout", () => {
+            a.style.transition = "0.75s"
+        })
     }
     )
 }
