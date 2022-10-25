@@ -1,14 +1,15 @@
 function Access_Content () {
-    let access_buttom = document.querySelector('.nav_content')
-    
-    access_buttom.addEventListener("click", () => {
-        let transition_page = document.querySelector('.initial_page')
-        let scroll_header = document.querySelector('.main_opitions')
-        let sections = document.querySelector('.sections')
+        let access_buttom = document.querySelectorAll('.nav_content')
+    access_buttom.forEach((a) => {
+        a.addEventListener("click", () => {
+            let transition_page = document.querySelector('.initial_page')
+            let scroll_header = document.querySelector('.main_opitions')
+            let sections = document.querySelector('.sections')
 
-        transition_page.classList.add('add_transition')
-        scroll_header.classList.add('transition_opitions')
-        sections.classList.add('transition_main')
+            transition_page.classList.add('add_transition')
+            scroll_header.classList.add('transition_opitions')
+            sections.classList.add('transition_main')
+        })
     }
     )
 }
