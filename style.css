@@ -28,14 +28,6 @@ li{
 
 
 
-.access_content{
-    padding: 30px 40px 30px 40px;
-    background-color: #143f41;
-    border-radius: 20px;
-    font-size: 25px;
-    color: rgb(172, 239, 235);
-}
-
 
 
 .transition_buttom :hover{
@@ -91,6 +83,7 @@ li{
 
 .about_content:hover{
     box-shadow: 15px 15px 15px rgb(11, 189, 225);
+    transform: scale(1.1, 1.1);
     transition: 1s;
 }
 
