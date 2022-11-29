@@ -1,36 +1,38 @@
-function Access_Content () {
-        let access_buttom = document.querySelectorAll('.nav_content')
-    access_buttom.forEach((a) => {
-        a.addEventListener("click", () => {
-            let transition_page = document.querySelector('.initial_page')
-            let scroll_header = document.querySelector('.main_opitions')
-            let sections = document.querySelector('.sections')
+function accessContent() {
+    const accessButtom = document.querySelectorAll('.nav_content');
 
-            transition_page.classList.add('add_transition')
-            scroll_header.classList.add('transition_opitions')
-            sections.classList.add('transition_main')
-        })
-        a.addEventListener("mouseout", () => {
-            a.style.transition = "0.75s"
-        })
-    }
-    )
+    accessButtom.forEach((elem) => {
+        elem.addEventListener("click", () => {
+            const transitionPage = document.querySelector('.initial_page');
+            const scrollHeader = document.querySelector('.main_opitions');
+            const sections = document.querySelector('.sections');
+
+            transitionPage.classList.add('add_transition');
+            scrollHeader.classList.add('transition_opitions');
+            sections.classList.add('transition_main');
+        });
+
+        elem.addEventListener("mouseout", () => {
+            elem.style.transition = "0.75s";
+        });
+    });
 }
-Access_Content()
 
-function Return_InitialPage () {
-    let initial_page = document.querySelector('.opition_home')
+accessContent();
 
-    initial_page.addEventListener("click", () => {
-        let page_one = document.querySelector('.initial_page')
-        let remove_header = document.querySelector('.main_opitions')
-        let remove_sections = document.querySelector('.sections')
+function returnInitialPage() {
+    const initialPage = document.querySelector('.opition_home');
 
-        page_one.classList.add('transition_opitions')
-        page_one.classList.remove('add_transition')
-        remove_header.classList.remove('transition_opitions')
-        remove_sections.classList.remove('transition_main')
-    })
+    initialPage.addEventListener("click", () => {
+        const pageOne = document.querySelector('.initial_page');
+        const removeHeader = document.querySelector('.main_opitions');
+        const removeSections = document.querySelector('.sections');
 
+        pageOne.classList.add('transition_opitions');
+        pageOne.classList.remove('add_transition');
+        removeHeader.classList.remove('transition_opitions');
+        removeSections.classList.remove('transition_main');
+    });
 }
-Return_InitialPage()
+
+returnInitialPage();
