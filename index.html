@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projeto Integrador</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./table.css">
         <link rel="shortcut icon" href="#">
     </head>
     <body>
@@ -14,10 +15,7 @@
                 <div class="preview_content">
                     <h1 class="tema">RW engineering</h1><br>
 
-                    <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptate sapiente labore amet consequuntur, voluptas et 
-                    cum iusto nam voluptatum, consequatur, voluptatibus neque.
-                    In dolor repellat error eius minus dolore corrupti.</p>
+                    <p class="main_text">Projeto desenvolvido com o intuito de facilitar a vida dos estudantes de engenharia em diversos aspectos.</p>
                 </div>
             </div>
 
@@ -26,9 +24,8 @@
                     <img class="logo" src="./imagem.src/fisica.png" alt="">
                     <div class="explanation_content">
                         <h3 class="title">Física</h3><br>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa fugiat veniam tempora voluptatum qui ut neque, alias
-                        repudiandae, nemo iusto magni inventore ea voluptatibus a fugit.
+                        <p class="content">
+                            Fornecer aos alunos conceitos e aplicações sobre diferentes materias, alem de como se relacionam com o ambiente.
                         </p>
                     </div>
                 </div>
@@ -37,9 +34,8 @@
                     <img class="logo" src="./imagem.src/estrutura-hierarquica.png" alt="">
                     <div class="explanation_content">
                         <h3 class="title">Estrutura de Dados</h3><br>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa fugiat veniam tempora voluptatum qui ut neque, alias
-                        repudiandae, nemo iusto magni inventore ea voluptatibus a fugit.
+                        <p class="content">
+                            Apresentar os algoritmos e estruturas de dados basicas parta o desenvolvimento de programas de computador.
                         </p>
                     </div>
                 </div>
@@ -48,9 +44,8 @@
                     <img class="logo" src="./imagem.src/quimica.png" alt="">
                     <div class="explanation_content">
                         <h3 class="title">Química</h3><br>
-                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa fugiat veniam tempora voluptatum qui ut neque, alias
-                        repudiandae, nemo iusto magni inventore ea voluptatibus a fugit.
+                        <p class="content">
+                            Conceitos fundamentais de quimica e utilização da simbologia adequada para representar substancias quimicas e suas reações.
                         </p>
                     </div>
                 </div>
@@ -77,8 +72,52 @@
         <div class="sections">
 
             <section id="page_fisica" class="section_content">
-                <div class="center_container">
-                    <div class="canvas_container">
+                <div class="center_container" style="margin-top: 250px;">
+                    <h1>Colisões</h1>
+
+                    <span class="content_text">
+                        As colisões são interações entre corpos em que um exerce força sobre o outro. 
+                        Veja quais são as características inerentes às colisões elásticas e inelásticas.
+                    </span>
+
+                    <h3 style="margin-top: 15px;">Colisões elásticas</h3>
+
+                    <span class="content_text">
+                        A colisão é denominada elástica quando ocorre conservação da energia e do momento linear 
+                        dos corpos envolvidos. A principal característica desse tipo de colisão é que, após o choque, a 
+                        velocidade das partículas muda de direção, mas a velocidade relativa entre os dois corpos mantém-se igual.
+                    </span>
+
+                    <span class="content_text">
+                        Como já citado anteriormente, nesse tipo de colisão, ocorre a conservação da energia e do momento 
+                        linear. Essa conservação pode ser descrita pelas equações:
+                    </span>
+
+                    <span class="content_text">
+                        Para conservação do momento linear: <br> Qi = Qf —> mA . VIA + mB . VIB = mA . VFA + mB . VFB
+                    </span>
+
+                    <span class="content_text">
+                        Para a conservação da energia cinética: <br> EI = EF —> 1 mA / 2 . VIA2 + 1 mB / 2 . VIB2 = 1 mA / 2 . VFA2 + 1 mB / 2. VFB2
+                    </span>
+
+                    <span class="content_text">
+                        Sendo que: <br><br>
+
+                        mA e mB são as massas dos corpos A e B respectivamente;
+                        <br>VI é a velocidade inicial;
+                        <br>VF é a velocidade final.
+                    </span>
+
+                    <h3 style="margin-top: 15px;">Colisões inelásticas</h3>
+
+                    <span class="content_text">
+                        Se, ao ocorrer uma colisão, não houver conservação da energia cinética, ela será denominada colisão 
+                        inelástica. Nesse tipo de colisão, a energia pode ser transformada em outra forma, por exemplo, em 
+                        energia térmica, ocasionando o aumento da temperatura dos objetos que colidiram. Dessa forma, apenas o momento linear é conservado.
+                    </span>
+
+                    <div class="canvas_container" style="margin-top: 40px;">
                         <div id="stateButton" class="spheres_button">
                             Iniciar Simulação
                         </div>
@@ -88,14 +127,21 @@
             </section>
 
             <section id="page_quimica" class="section_content">
-                <div style="color: white;">
-                    page quimica
+                <div class="center_container">
+
+                    <div class="table-container">
+                        <table id="table"></table>
+                    </div>
                 </div>
             </section>
 
             <section id="page_estrutura" class="section_content">
-                <div style="color: white;">
-                    page estrutura
+
+
+                <div class="center_container">
+                    <div style="color: white;">
+                        page estrutura
+                    </div>
                 </div>
             </section>
 
@@ -103,6 +149,7 @@
 
         <script type="text/javascript" src="./animation.js"></script>
         <script type="text/javascript" src="./simulationScript.js"></script>
+        <script type="text/javascript" src="./table.js"></script>
         
     </body>
 </html>
