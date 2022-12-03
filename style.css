@@ -130,12 +130,24 @@ li {
     transform: translateX(-110%);
     margin-left: 1%;
     margin-right: 1%;
-    height: 85vh;
+    height: 0px;
     background-color: rgba(0, 5, 26, 0.7);
     border-radius: 20px;
 }
 
+.section_content {
+    height: 0px;
+    transform: translateX(-110%);
+}
+
 .transition_main {
+    height: 85vh;
+    transform: translateY(3%);
+    transition: 0.75s;
+}
+
+.transition_section {
+    height: 100%;
     transform: translateY(3%);
     transition: 0.75s;
 }
@@ -152,4 +164,39 @@ li {
 
 .border {
     border-bottom: solid;
+}
+
+.center_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas_container {
+    position: relative;
+    background-color: white;
+    width: 1200px;
+    height: 600px;
+    border-radius: 32px;
+}
+
+.spheres_button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    background-color: rgba(0, 5, 26, 0.7);
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.75s ease 0s
+}
+
+.spheres_button:hover {
+    background-color: rgb(11, 189, 225);
+    color: black;
+    transform: scale(1.1, 1.1);
 }
