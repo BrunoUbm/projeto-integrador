@@ -92,7 +92,7 @@ li {
     color: rgb(43, 142, 185);
 }
 
-.main_opitions {
+.main_options {
     display: flex;
     justify-content: space-around;
     background-color: rgba(0, 5, 26, 0.7);
@@ -111,7 +111,7 @@ li {
     font-size: 30px;
 }
 
-.opition_nav {
+.option_nav {
     margin-right: 30px;
     margin-left: 30px;
     font-size: 20px;
@@ -152,7 +152,7 @@ li {
     transition: 0.75s;
 }
 
-.transition_opitions {
+.transition_options {
     transform: translateY(0%);
     transition: 0.75s;
 }
